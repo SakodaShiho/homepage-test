@@ -127,17 +127,14 @@ video {
   font-size: 0.9rem;
 }
 
-/* button */
-
-.bg-transparent {
-  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
-  border-radius: 30px;
+.standard {
+  border-color: #a6d5f9;
 }
-
-/* button */
-.bg-transparent {
-  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
-  border-radius: 30px;
+.standard h3 {
+  color: #a6d5f9;
+}
+.price p {
+  color: #a6d5f9;
 }
 /* ---radio button------ */
 .tabAnim {

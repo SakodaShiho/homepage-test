@@ -350,7 +350,7 @@
 
   <!-- Pricing 1 -->
   <section
-    class="box-border py-8 leading-7 text-gray-900 bg-white border-0 border-gray-200 border-solid sm:py-12 md:py-16 lg:py-24"
+    class="box-border py-8 leading-7 text-gray-900 border border-gray-200 border-solid sm:py-12 md:py-16 lg:py-24"
     id="price">
     <div class="box-border max-w-6xl px-4 pb-12 mx-auto border-solid sm:px-6 md:px-6 lg:px-4">
       <div class="flex flex-col items-center leading-7 text-center text-gray-900">
@@ -363,9 +363,10 @@
 
       </div>
       <div
-        class="fadeIn-rotated grid max-w-md mx-auto mt-6 overflow-hidden leading-7 text-gray-900 border border-gray-300 rounded-xl md:max-w-lg lg:max-w-none sm:mt-10 lg:grid-cols-4">
+        class="fadeIn-rotated grid max-w-md mx-auto mt-6 leading-7 text-gray-900 border border-gray-300 rounded-xl md:max-w-lg lg:max-w-none sm:mt-10 lg:grid-cols-4">
 
-        <div class="box-border py-8 text-center bg-white border-solid border border-gray-300 lg:mb-0 sm:py-8 md:py-12">
+        <div
+          class="plan_item box-border py-8 text-center bg-white sm:border-solid border border-gray-300 rounded-t-lg lg:mb-0 sm:py-8 md:py-12">
           <p class="leading-7 text-gray-900 border-0 border-solid">　</p>
           <h3
             class="m-0 text-2xl font-semibold leading-tight tracking-tight text-black border-0 border-solid sm:text-3xl md:text-2xl">
@@ -398,18 +399,19 @@
             </span>
           </div>
           <a href="#contact"><button
-              class="bg-blue-300  font-black hover:bg-blue-500 transition duration-200 text-white py-2 px-8  rounded-full mt-4">
+              class="bg-blue-300  font-black hover:bg-blue-500 transition duration-200 text-white py-2 px-8  rounded-full mt-4"
+              id="plan0">
               お申し込み
             </button></a>
         </div>
 
         <div
-          class="standard box-border py-8 text-center bg-white border-solid border border-gray-300 lg:mb-0 sm:py-8 md:py-12">
+          class="plan_item standard box-border py-8 text-center border-solid border border-gray-300 lg:mb-0 sm:py-8 md:py-12">
           <p class="leading-7 text-gray-900 border-0 border-solid">
             人気NO.1
           </p>
           <h3
-            class="m-0 text-2xl font-semibold leading-tight tracking-tight text-black border-0 border-solid sm:text-3xl md:text-2xl">
+            class="m-0 text-2xl font-semibold leading-tight tracking-tight text-blue-400 border-0 border-solid sm:text-3xl md:text-2xl">
             スタンダード
           </h3>
           <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
@@ -431,7 +433,7 @@
             最低契約日数36ヶ月
           </p>
           <div
-            class="price flex items-center justify-center mt-6 leading-7 text-gray-900 border-0 border-solid sm:mt-8">
+            class="price flex items-center justify-center mt-6 leading-7 text-blue-400 border-0 border-solid sm:mt-8">
             <p class="box-border m-0 text-4xl font-semibold leading-normal text-center border-0 border-gray-200">
               ¥19,870
             </p>
@@ -448,7 +450,8 @@
           </a>
         </div>
 
-        <div class="box-border py-8 text-center bg-white border-solid border border-gray-300 lg:mb-0 sm:py-8 md:py-12">
+        <div
+          class="plan_item box-border py-8 text-center bg-white border-solid border border-gray-300 lg:mb-0 sm:py-8 md:py-12">
           <p class="leading-7 text-gray-900 border-0 border-solid">
             企業様向け
           </p>
@@ -484,13 +487,14 @@
           </div>
           <a href="#contact">
             <button
-              class="bg-blue-300  font-black hover:bg-blue-500 transition duration-200 text-white py-2 px-8  rounded-full mt-4">
+              class="bg-blue-300  font-black hover:bg-blue-500 transition duration-200 text-white py-2 px-8  rounded-full mt-4"
+              id="plan2">
               お申し込み
             </button>
           </a>
         </div>
 
-        <div class="box-border py-8 text-center bg-white border-solid border border-gray-300 lg:mb-0 sm:py-8 md:py-12">
+        <div class="plan_item2 box-border py-8 text-center bg-white lg:mb-0 sm:py-8 md:py-12">
           <p class="leading-7 text-gray-900 border-0 border-solid">
             企業様向け
           </p>
@@ -526,7 +530,8 @@
           </div>
           <a href="#contact">
             <button
-              class="bg-blue-300  font-black hover:bg-blue-500 transition duration-200 text-white py-2 px-8  rounded-full mt-4">
+              class="bg-blue-300  font-black hover:bg-blue-500 transition duration-200 text-white py-2 px-8  rounded-full mt-4"
+              id="plan3">
               お申し込み
             </button>
           </a>
@@ -862,32 +867,32 @@
                     </div>
                   </div>
                 </div>
-                <div class="relative pt-4">
-                  <label class="font-medium text-gray-900">お申し込みプラン<span class="text-xs text-red-500"> 必須</span></label>
-                  <div class="radio-button max-w-screen-xl mx-auto py-4 flex flex-col items-center">
-                    <div class="flex w-full relative">
-                      <input name="entry.541335101" type="radio" checked id="form0_target" class="appearance-none"
-                        value="新規サイト制作" />
-                      <label for="form0_target"
-                        class="z-20 cursor-pointer w-1/4 flex items-center justify-center truncate select-none rounded-full py-2 text-gray-700">新規サイト制作</label>
+                <div>
+                  <div class="relative pt-4">
+                    <label class="font-medium text-gray-900">お申し込みプラン<span class="text-xs text-red-500">
+                        必須</span></label>
+                    <div class="radio-button max-w-screen-xl mx-auto py-4 flex flex-col items-center">
+                      <div class="flex w-full relative">
+                        <input name="entry.5413351" type="radio" checked id="form0_target" class="appearance-none"
+                          value="" />
+                        <label for="form0_target"
+                          class="z-20 cursor-pointer w-1/4 flex items-center justify-center truncate select-none rounded-full py-2 text-gray-700">エコノミー</label>
 
-                      <input name="entry.541335101" type="radio" id="form1_target" class="appearance-none"
-                        value="既存サイトリニューアル" />
-                      <label for="form1_target"
-                        class="z-20 cursor-pointer w-1/4 flex items-center justify-center truncate select-none  rounded-full py-2 text-gray-700">既存サイト<br>リニューアル</label>
+                        <input name="entry.5413351" type="radio" id="form1_target" class="appearance-none" value="" />
+                        <label for="form1_target"
+                          class="z-20 cursor-pointer w-1/4 flex items-center justify-center truncate select-none rounded-full py-2 text-gray-700">スタンダード</label>
 
-                      <input name="entry.541335101" type="radio" id="form2_target" class="appearance-none"
-                        value="LPページ制作" />
-                      <label for="form2_target"
-                        class="z-20 cursor-pointer w-1/4 flex items-center justify-center truncate select-none  rounded-full py-2 text-gray-700">LPページ制作</label>
+                        <input name="entry.5413351" type="radio" id="form2_target" class="appearance-none" value="" />
+                        <label for="form2_target"
+                          class="z-20 cursor-pointer w-1/4 flex items-center justify-center truncate select-none rounded-full py-2 text-gray-700">プレミアム</label>
 
-                      <input name="entry.541335101" type="radio" id="form3_target" class="appearance-none"
-                        value="その他" />
-                      <label for="form3_target"
-                        class="z-20 cursor-pointer w-1/4 flex items-center justify-center truncate select-none  rounded-full py-2 text-gray-700">その他</label>
+                        <input name="entry.5413351" type="radio" id="form3_target" class="appearance-none" value="" />
+                        <label for="form3_target"
+                          class="z-20 cursor-pointer w-1/4 flex items-center justify-center truncate select-none rounded-full py-2 text-gray-700">ファースト</label>
 
-                      <div
-                        class="radio-focus z-10 w-1/4 flex items-center justify-center truncate select-none  rounded-full p-0 h-full absolute transform transition-transform tabAnim">
+                        <div
+                          class="radio-focus z-10 w-1/4 flex items-center justify-center truncate select-none  rounded-full p-0 h-full absolute transform transition-transform tabAnim">
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1350,8 +1355,26 @@
     });
   </script>
   <script>
+    $("#plan0").on("click", function (event) {
+      var element = document.getElementById("form0_target");
+      element.checked = true;
+      console.log("form", element, element.checked)
+    });
+
     $("#plan1").on("click", function (event) {
       var element = document.getElementById("form1_target");
+      element.checked = true;
+      console.log("form", element, element.checked)
+    });
+
+    $("#plan2").on("click", function (event) {
+      var element = document.getElementById("form2_target");
+      element.checked = true;
+      console.log("form", element, element.checked)
+    });
+
+    $("#plan3").on("click", function (event) {
+      var element = document.getElementById("form3_target");
       element.checked = true;
       console.log("form", element, element.checked)
     });

@@ -164,6 +164,18 @@ video {
 .form-submit button {
   background-color: #90caf9;
 }
+#form0_target:checked ~ div {
+  --tw-translate-x: 0%;
+}
+#form1_target:checked ~ div {
+  --tw-translate-x: 100%;
+}
+#form2_target:checked ~ div {
+  --tw-translate-x: 200%;
+}
+#form3_target:checked ~ div {
+  --tw-translate-x: 300%;
+}
 /* ---radio button------ */
 
 @media screen and (min-width: 768px) {

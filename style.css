@@ -206,6 +206,37 @@ video {
   .radio-button label {
     font-size: 0.7rem;
   }
+  #option0:checked ~ div {
+    --tw-translate-x: 5%;
+  }
+  #option1:checked ~ div {
+    --tw-translate-x: 105%;
+  }
+  #option2:checked ~ div {
+    --tw-translate-x: 205%;
+  }
+  #option3:checked ~ div {
+    --tw-translate-x: 305%;
+  }
+  #option4:checked ~ div {
+    --tw-translate-x: 405%;
+  }
+
+  .form-submit button {
+    background-color: #90caf9;
+  }
+  #form0_target:checked ~ div {
+    --tw-translate-x: 5%;
+  }
+  #form1_target:checked ~ div {
+    --tw-translate-x: 105%;
+  }
+  #form2_target:checked ~ div {
+    --tw-translate-x: 205%;
+  }
+  #form3_target:checked ~ div {
+    --tw-translate-x: 305%;
+  }
 }
 
 /* ---form message------ */
